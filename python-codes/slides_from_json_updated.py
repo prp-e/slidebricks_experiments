@@ -239,4 +239,4 @@ json_input = '''
 json_data = json.loads(json_input)
 
 # Create the presentation using a template with a design
-create_presentation_from_json(json_data, "template_with_design.pptx")
+create_presentation_from_json(json_data)
