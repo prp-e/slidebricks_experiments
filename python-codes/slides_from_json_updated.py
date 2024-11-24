@@ -19,7 +19,7 @@ def create_presentation_from_json(json_data, template_file='template.pptx'):
     # Extract settings
     settings = json_data.get("settings", {})
     font_name = settings.get("font", "Arial")
-    font_color = settings.get("colors", {}).get("text", "000000")
+    font_color = settings.get("colors", {}).get("text", "ffffff")
     rtl = settings.get("rtl", False)
 
     # Convert font color from hex to RGB
@@ -161,7 +161,7 @@ json_input = '''
     "settings": {
         "colors": {
             "background": "FFFFFF",
-            "text": "000000"
+            "text": "FFFFFF"
         },
         "font": "Arial",
         "rtl": false
