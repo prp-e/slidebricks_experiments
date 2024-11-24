@@ -3,7 +3,7 @@ from pptx import Presentation
 
 def create_presentation_from_json(json_data):
     # Create a new presentation object
-    presentation = Presentation()
+    presentation = Presentation("template1.pptx")
 
     # Add the title slide
     title_slide_layout = presentation.slide_layouts[0]  # Title Slide layout
