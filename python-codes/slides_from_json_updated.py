@@ -12,7 +12,7 @@ def apply_text_settings(text_frame, font_name, font_color, rtl):
             run.font.color.rgb = RGBColor(*font_color)
         paragraph.alignment = PP_ALIGN.RIGHT if rtl else PP_ALIGN.LEFT
 
-def create_presentation_from_json(json_data, template_file):
+def create_presentation_from_json(json_data, template_file=None):
     # Load the presentation with the desired design
     presentation = Presentation(template_file)
 
